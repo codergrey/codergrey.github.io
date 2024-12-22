@@ -13,14 +13,14 @@
     <!-- Bootstrap CSS -->
     <title>Libreria BF</title>
     <script src="https://kit.fontawesome.com/a6701b4867.js" crossorigin="anonymous"></script>
-    <link rel="shorcut icon" href="img/lapiz.ico">
-    <Link rel="stylesheet" href="css/styles.css">
+    <link rel="shorcut icon" href="imgs/lapiz.ico">
+    <Link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header>
     <section class="bgVerdeManzana containerIntroHojas">
-        <div class="w25 flexGrow1"><a href="index.html"><img src="img/logo.png" alt="Logo de Libreria FB" width="120px"></a></div>
+        <div class="w25 flexGrow1"><a href="index.html"><img src="imgs/logo.png" alt="Logo de Libreria FB" width="120px"></a></div>
         <div class="w75 flexGrow5"><h1 style="color:#ffff" id="ocultar">Nosotros</h1></div>
     </section>
     
@@ -87,20 +87,29 @@
   <p class="formulario">Por favor completa este formulario para ayudarnos a crecer o simplemente para decir hola. Cualquier cosa que tengas para decir es bienvenida, así que no lo dudes y déjanos un mensaje. Estaremos felices de contestarte!</p>
 </div>
   <hr>
-
-
-   
-  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mdkozvzj" method="POST">
-      <fieldset id="fs-frm-inputs">
-      <input type="text" name="name" id="full-name" placeholder="NOMBRE COMPLETO" required="">
-      <input type="email" name="_replyto" id="email-address" placeholder="E-MAIL" required="">
-      <textarea rows="5" name="message" id="message" placeholder=" INGRESE SU MENSAJE" required=""></textarea>
-      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-    </fieldset>
-    <div class="btn" !important>
-<input type="submit" value="ENVIAR">
+<div class="formulario">
+  <form>
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Nombre completo</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese nombre y apellido">
     </div>
-    
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su correo electrónico">
+    </div>   
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
+      <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su mensaje o sugerencia">
+    </div>    
+               
+          <div class="fontNunito"> 
+              <input class="btn" value="Enviar Mensaje">
+          </div>
+  </form>
+</div> 
+
+
+
 <!--PIE DE PAGINA-->
 <footer class="container-footer">
   <div  >
@@ -119,80 +128,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
-   
-  <style>/* reset */
-  #fs-frm input,
-  #fs-frm select,
-  #fs-frm textarea,
-  #fs-frm fieldset,
-  #fs-frm optgroup,
-  #fs-frm label,
-  #fs-frm #card-element:disabled {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 100%;
-    color: inherit;
-    border: none;
-    border-radius: 5px;
-    display: block;
-    width: 100%;
-    padding-top: 20px;
-    padding-right: 400px;
-    padding-bottom: 10px; 
-    padding-left: 400px;
-    margin: 0px;
-  }
-  #fs-frm label,
-  #fs-frm legend,
-  #fs-frm ::placeholder {
-    font-size: .825rem;
-    color:#4f5bd5;
-    margin-bottom: .5rem;
-    padding-top: .2rem;
-    display: flex;
-    align-items: baseline;
-  }
-  
-  /* border, padding, margin, width */
-  #fs-frm input,
-  #fs-frm select,
-  #fs-frm textarea,
-  #fs-frm #card-element {
-    border: 1px solid rgba(0,0,0,0.2);
-    background-color: #feda75;
-    padding: .75em 1rem;
-    margin-bottom: 1.5rem;
-  }
-  #fs-frm input:focus,
-  #fs-frm select:focus,
-  #fs-frm textarea:focus {
-    background-color: #4f5bd5;
-    outline-style: solid;
-    outline-width: thin;
-    outline-color:#4f5bd5;
-    outline-offset: -1px;
-  }
-  #fs-frm [type="text"],
-  #fs-frm [type="email"] {
-    width: 100%;
-  }
-  #fs-frm [type="button"],
-  #fs-frm [type="submit"],
-  #fs-frm [type="reset"] {
-    width: 100%;
-    cursor: pointer;
-
-  }
-  #fs-frm [type="button"]:focus,
-  #fs-frm [type="submit"]:focus,
-  #fs-frm [type="reset"]:focus {
-    outline: none;
-  }
-  #fs-frm [type="submit"],
-  #fs-frm [type="reset"] {
-    margin-bottom: 0px;
-  }
-  #fs-frm select {
-    text-transform: none;
-  }
-
-
